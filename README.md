@@ -1,5 +1,5 @@
 # MXB103-Assignment
-![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-1.jpg)
+![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-1.jpg?token=AJzkeYisVq_t0DvV6mvlkYe6iFTKBXpNks5ZBCCfwA%3D%3D)
 ![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-2.jpg)
 ![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-3.jpg)
 ![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-4.jpg)
