@@ -1,1 +1,9 @@
 # MXB103-Assignment
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-1.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-2.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-3.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-4.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-5.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-6.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-7.jpg)
+![alt tag](https://cdn.rawgit.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-8.jpg)
