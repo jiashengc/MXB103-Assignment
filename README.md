@@ -1,9 +1,2 @@
 # MXB103-Assignment
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-1.jpg?token=AJzkeYisVq_t0DvV6mvlkYe6iFTKBXpNks5ZBCCfwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-2.jpg?token=AJzkeeAM617k8b80NahaJq6RECffIKZXks5ZBCDQwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-3.jpg?token=AJzkeaXTR0xZRV3ET4Zwi14Wf_NwpM7Jks5ZBCDWwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-4.jpg?token=AJzkeRkEnwrekNoCMP73LJUCqZ6lPP5iks5ZBCDZwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-5.jpg?token=AJzkeQLMXnW8_XefToUYArn_HZnA51ejks5ZBCDbwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-6.jpg?token=AJzkedlno0MMxyJM7flfnDxBxk8aWrL1ks5ZBCDdwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-7.jpg?token=AJzkeZH9RvmESGU8L2jlFlV87n65zMYuks5ZBCDgwA%3D%3D)
-![alt tag](https://raw.githubusercontent.com/jiashengc/MXB103-Assignment/master/Images/MXB103Project-8.jpg?token=AJzkeXtcT0vIZBL3KTgmTLebx0UXmHyeks5ZBCDiwA%3D%3D)
+
