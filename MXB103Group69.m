@@ -1,53 +1,49 @@
 %% MXB103 Project Group 69:  BUNGEE!
 
 %% 1  Introduction
-% As part of Brisbane's "New World City" transformation, the Brisbane City
-% Council is investigating a proposal to allow bungee jumping off the
-% Story Bridge. This report addresses several key questions about the
-% proposal.
+% In terms of Brisbane’s “New world city” plan, Brisbane city council has suggested a proposal 
+% that bungee jumping off is set on the bridge, Story Bridge. This report provides several key
+% questions as solutions on the proposal for the council.
 %
-% In Section 2 of this report, the proposal and the key questions relating 
-% to it are discussed in more detail.  In Section 3, the model ...
-% In Section 4, etc.
+% With the following section 2 on this report, the proposal and the important questions
+% are discussed in terms of the proposal in detail. In section 3, 4, and etc.
+
 
 %% 2  The proposal
-% The proposal calls for a platform to be installed at the very top of the
-% Story Bridge, from which the bungee jumps will take place.
+% A platform is called for as the proposal in order to be installed 
+% at the very top of Story Bridge.
 %
-% Firstly, we have been asked to implement a second order or higher numerical 
-% method to model the bungee jump. The code that we have chosen will obtain the numerical
-% solution for the model and the bungee jumper's position will be plotted
-% against time. 
+% For the first of all, either a second order or higher numerical method is implemented 
+% in order to model the bungee jump. The codes that we have written involve the numerical
+% solution for the model. What is more, the position of the bungee jumper is plotted
+% according to time.
 %
-% Secondly, we are then asked to observe the results of our model and
-% determine whether it agrees with the bungee jump company's suggestion
-% that a standard jump will consist of 10 "bounces" which should take
-% approximately 60 seconds. 
+% The second is that the observation of the results of our model and the determination if it
+% agrees with the suggestion that the bungee jump company provides, which is that a standard
+% jump consists of 10 bounces taking 60 seconds, approximately. 
 %
-% Thirdly, the maximum speed of the bungee jumper and when it occurs in 
-% relation to the overall jump need to be determined. It asks us to 
-% graphically plot the jumper's velocity against time.
+% The third is that the maximum speed of the bungee jumper is provided as well as when it occurs 
+% in relation to the overall jump. Graphically, plotting the velocity of the jumper is 
+% shown against time.
 %
-% Fourthly, in order to solve the following question, numerical differentiation
-% must be used to find the acceleration predicted by our model. After that,
-% we have to plot the jumper's acceleration against time. 
+% The fourth is to solve the following question. To solve them, numerical differentiation must 
+% be employed to find the acceleration expected by our model. Moreover, the acceleration of the 
+% jumper is graphically plotted against time.
+%
+% The fifth is to calculating the integral in order to determine how far the jumper specifically
+% travels in the 60 second jump. Also, the jumper’s acceleration is plotted against time, 
+% graphically.
 % 
-% Fifthly, we are then asked to compute the integral to determine how far the jumper
-% actually travels in the 60 second jump. To compute the integral numerical
-% integration will be used. 
-% 
-% Sixthly, a constituent of the proposal is to install a camera on the
-% bridge deck at height D from the water. An accurate value for t needs to be computed such that 
-% y(t) = H - D.
+% The sixth is to set a camera on the bridge deck at the height of D from the surface of water. 
+% An accurate value for t needs to be computed such as y(t) = H - D.
 %
-% Lastly, the bungee company then asks us to determine how close the jumper is to
-% touch the water. An investigation into how the bungee rope could be
-% altered to produce an accurate experience of a water touch for a jumper
-% who weighs 80kg, while still maintaing 10 bounces in 60 seconds.
+% The last is that we are asked by the bungee jump company to determine how close the jumper 
+% touches the surface of the water. How the bungee’s rope producing accurately the experience 
+% of the water touch for the jumper changes is investigated with 10 bounces in 60 seconds.
 %
-% These questions that are asked will be answered in order as they are all
-% related to each other. This way answers will be accurate. This approach
-% will work well as it ensures that the questions are answered accordingly.
+% These questions that are asked will be answered in order according to each question.
+% These answers will be accurate. This approach will work well as it ensures that the questions 
+% are answered accordingly.
 % 
 % The next section will discuss the model in more detail, relating to the
 % equation and its origin. 
@@ -56,25 +52,25 @@
 
 %% 3 The model
 %
-% The equation of motion for bungee jumping is
+% For bungee jumping, the equation of motion is
 %
 % $\frac{dv}{dt} = g - C|v|v - max(0,K(y-L))$
 % 
-% Being aware of the forces (gravity (mg), drag(-c|v|v) and tension 
-% (-max(0,k(y-L))) that are regularly acting on the jumper, the mathematical 
+% Recognizing the forces (gravity (mg), drag(-c|v|v) and tension 
+% (-max(0,k(y-L))) that regularly act on the jumper, the mathematical 
 % model of performing bungee jumping can be derived. 
 % 
-% The sum of the forces that are acting on the jumper equals the product of
-% the jumper's mass and acceleration. The ODE which governs bungee jumping
+% The sum of the forces that act on the jumper equals the product of
+% the mass of the jumper and the acceleration of it. The ODE related to bungee jumping
 % is
 % 
 % $\frac m{dv}{dt} = mg - c|v|v - max(0,k(y-L))$
 %
-% The drag force acts in the opposite direction to motion which always 
+% The drag force acts in the opposite direction to the motion which always 
 % slows the jumper down. The value is given by -c|v|v, c is the drag 
 % coefficient and the velocity of the jumper is v. The length of the 
 % unstretched rope is L, the tension when the rope is
-% taut is k(y-L), where the "spring constant" k measures the bungee ropes
+% pulled tightly is k(y-L), where the "spring constant" k measures the bungee ropes
 % elasticity. The tension force is - max(0,k(y-L)). When y > L the maximum
 % function makes sure that the tension "switches on". And to make sure that
 % it acts upwards the minus sign is placed in front. 

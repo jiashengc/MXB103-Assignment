@@ -1,20 +1,20 @@
 function [t, y, v, h, x] = rk_bungee_integral(T, n, g, C, K, L)
 % rk_bungee Runge-Kutta method for the bungee jumping model
-% [t, y, v, h] = rk_bungee(T, n, g, C, K, L) performs Euler's method on
+% [t, y, v, h] = rk_bungee(T, n, g, C, K, L) implements Euler's method on
 % the bungee jumping model, taking n steps from t = 0 to t = T.
 % The initial conditions are y(0) = 0 and v(0) = 0.
 % The inputs g, C, K and L are parameters from the model 
-% (see project description). The outputs are the time array t, the solution
+% The outputs are the time array t, the solution
 % arrays y and v, and the subinterval width h. To be complimented by a 
 % time vs displacement plot.
 
-    % Calculate subinterval width h
+    % Subinterval width h
     h = T / n;
 
-    % Create time array t
+    % Time array t
     t = 0:h:T;
         
-    % Initialise solution arrays y and v
+    % Solution arrays y and v
     y = zeros(1,n+1);
     v = zeros(1,n+1);
     x = zeros(1,n+1);
@@ -23,23 +23,23 @@ function [t, y, v, h, x] = rk_bungee_integral(T, n, g, C, K, L)
     
     g = @(t,y,v) g - C*abs(v)*v - max(0, K*(y - L));
     
-    % Perform iterations
-    for j = 1:n
-        k1 = h * f(t(j), y(j), v(j));
-        n1 = h * g(t(j), y(j), v(j));
+    % Iterations
+    for i = 1:n
+        k_1 = h * f(t(i), y(i), v(i));
+        n_1 = h * g(t(i), y(i), v(i));
         
-        k2 = h * f(t(j) + h/2, y(j) + k1/2, v(j) + n1/2);
-        n2 = h * g(t(j) + h/2, y(j) + k1/2, v(j) + n1/2);
+        k_2 = h * f(t(i) + h/2, y(i) + k_1/2, v(i) + n_1/2);
+        n_2 = h * g(t(i) + h/2, y(i) + k_1/2, v(i) + n_1/2);
         
-        k3 = h * f(t(j) + h/2, y(j) + k2/2, v(j) + n2/2);
-        n3 = h * g(t(j) + h/2, y(j) + k2/2, v(j) + n2/2);
+        k_3 = h * f(t(i) + h/2, y(i) + k_2/2, v(i) + n_2/2);
+        n_3 = h * g(t(i) + h/2, y(i) + k_2/2, v(i) + n_2/2);
         
-        k4 = h * f(t(j) + h, y(j) + k3, v(j) + n3);
-        n4 = h * g(t(j) + h, y(j) + k3, v(j) + n3);
+        k_4 = h * f(t(i) + h, y(i) + k_3, v(i) + n_3);
+        n_4 = h * g(t(i) + h, y(i) + k_3, v(i) + n_3);
         
-       y(j+1) = y(j) + (1/6)*(k1 + 2*k2 + 2*k3 + k4);
-       v(j+1) = v(j) + (1/6)*(n1 + 2*n2 + 2*n3 + n4);
-       x(j+1) = x(j) + abs((1/6)*(k1 + 2*k2 + 2*k3 +k4));
+       y(i+1) = y(i) + (1/6)*(k_1 + 2*k_2 + 2*k3 + k_4);
+       v(i+1) = v(i) + (1/6)*(n_1 + 2*n_2 + 2*n3 + n_4);
+       x(i+1) = x(i) + abs((1/6)*(k_1 + 2*k_2 + 2*k3 +k_4));
     end
           
    

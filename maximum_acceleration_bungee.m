@@ -1,6 +1,6 @@
 function [a, maxacc] = maximum_acceleration_bungee(v,h,n)
 %MAXIMUM ACCELERATION BUNGEE First order backward difference approximation for 
-%acceleration for the bungee. max_a = acceleration_bungee(v,h,n) returns 
+%acceleration for the bungee. [a, maxacc] = maximum_acceleration_bungee(v,h,n) returns 
 %the maximum acceleration of the bungee jumper at all positions
 
 a = zeros(length(n));
